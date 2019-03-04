@@ -1,0 +1,21 @@
+**********************************************
+*****十进制转换八进制，   enter   'a'    *****
+*****十进制转换二进制，   enter   'b'    *****
+*****十进制转换十六进制， enter   'c'    *****
+**********************************************
+
+Please enter a char:    a
+Please enter a num:      8520
+20510
+Please enter a char:    b
+Please enter a num:      8520
+10000101001000
+Please enter a char:    c
+Please enter a num:      8520
+2148
+Please enter a char:    q
+wrong!
+
+--------------------------------
+Process exited after 171.5 seconds with return value 0
+请按任意键继续. . .

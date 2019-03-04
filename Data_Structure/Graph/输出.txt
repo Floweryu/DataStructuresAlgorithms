@@ -1,0 +1,45 @@
+请输入总顶点数，总变数：   13 17
+
+请输入顶点的值：
+A B C D E F G H I J K L M
+
+请输入17条边的顶点关系:
+A B
+A C
+A F
+A L
+B C
+B D
+B G
+B H
+B M
+D E
+G H
+G I
+G K
+H K
+J L
+J M
+L M
+A->L  A->F  A->C  A->B
+B->M  B->H  B->G  B->D  B->C  B->A
+C->B  C->A
+D->E  D->B
+E->D
+F->A
+G->K  G->I  G->H  G->B
+H->K  H->G  H->B
+I->G
+J->M  J->L
+K->H  K->G
+L->M  L->J  L->A
+M->L  M->J  M->B
+关节点为：
+6 G
+1 B
+3 D
+1 B
+0 A
+
+Process returned 0 (0x0)   execution time : 24.701 s
+Press any key to continue.

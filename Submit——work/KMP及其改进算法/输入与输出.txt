@@ -1,0 +1,24 @@
+************************************
+*******KMP原始算法    enter  a *****
+*******KMP改进算法    enter  b *****
+************************************
+主串为：
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab
+子串为：
+aab
+
+Please enter a char  :   a
+next 数组为：
+-1 0 1
+在第58个字符处匹配
+
+Please enter a char  :   b
+nxtval数组为：
+-1 -1 1
+在第58个字符处匹配
+
+Please enter a char  :   q
+
+--------------------------------
+Process exited after 20.92 seconds with return value 0
+请按任意键继续. . .

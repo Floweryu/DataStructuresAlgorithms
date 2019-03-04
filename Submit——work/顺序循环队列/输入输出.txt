@@ -1,0 +1,54 @@
+******************请按提示进行操作************************
+***** 初始化队列,                       enter    'a' *****
+***** 向队列里输入数据，                enter    'b' *****
+***** 判断队列是否为空，                enter    'c' *****
+***** 判断队列是否已满？                enter    'd' *****
+***** 清空队列，                        enter    'e' *****
+***** 销毁队列 ，                       enter    'f' *****
+***** 返回队列元素的个数，              enter    'g' *****
+***** 返回队头元素,并不删除，           enter    'h' *****
+***** 在队尾插入元素，                  enter    'i' *****
+***** 删除队头元素，并用返回其值，      enter    'j' *****
+***** 输出队列里的全部元素，            enter    'k' *****
+**********************************************************
+
+Please enter a char:    a
+已为您初始化完成一个空链队列。
+
+Please enter a char:    b
+请输入数据的个数：  6
+数据个数大于已定义的最大容量！！！
+
+Please enter a char:    b
+请输入数据的个数：  3
+1 2 3
+
+Please enter a char:    c
+This is not an empty stack.
+
+Please enter a char:    d
+The queue is unFULL.
+
+Please enter a char:    g
+链队列的长度是 :     3
+
+Please enter a char:    h
+队头元素为 :   1
+
+Please enter a char:    i
+请输入要插入元素的值：    0
+插入后栈内元素值变为：  1 2 3 0
+
+
+Please enter a char:    j
+删除的队头元素是：   1
+
+Please enter a char:    k
+2 3 0
+
+Please enter a char:    q
+wrong!
+
+--------------------------------
+Process exited after 44.08 seconds with return value 0
+请按任意键继续. . .

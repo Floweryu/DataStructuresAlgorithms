@@ -1,0 +1,64 @@
+******************************************************************
+*****        正向创建一个单向链表，Please enter 'a'          *****
+*****         返回单向链表的长度，Please enter   'b'         *****
+*****         输出单向链表中的数据，Please enter 'c'         *****
+*****       判断链表是否为空，Please enter 'd'               *****
+*****       返回给定位置的节点元素值，Please enter 'e'       *****
+*****     返回给定元素值的节点位置，Please enter 'f'         *****
+*****   在链表中指定位置i在之前处插入数据，Please enter 'g'  *****
+*****   删除第i个元素，并由e返回其值，Please enter 'h'       *****
+*****        逆向创建一个单向链表，Please enter 'i'          *****
+*****       删除有序单向链表中的重复元素，Please enter 'j'   *****
+*****      对单链表进行逆序输出,  Please enter 'k'           *****
+******************************************************************
+
+Please enter a char:    a
+请输入创建链表的长度：  8
+9 8 7 6 5 4 3 2
+
+Please enter a char:    b
+该链表的长度是：  8
+Please enter a char:    c
+此单向链表中的数据为：
+9 8 7 6 5 4 3 2
+Please enter a char:    d
+这不是一个空的链表。
+
+Please enter a char:    e
+你想知道第几个元素：   6
+第  6  个元素的值为：  4
+
+Please enter a char:    f
+输入你想知道是否在链表中的数值：  3
+值为  3  是表中的第  7  个元素
+
+Please enter a char:    g
+请输入插入元素的位置：  3
+请输入插入元素的值：  0
+插入后链表的值为：
+9 8 0 7 6 5 4 3 2
+
+Please enter a char:    h
+请输入删除元素的位置：  4
+删除该位置的元素值为:  7
+删除后线性表为:
+9 8 0 6 5 4 3 2
+
+Please enter a char:    j
+
+Please enter a char:    k
+2 3 4 5 6 0 8 9
+
+Please enter a char:    i
+请输入创建链表的长度：  8
+1 2 3 4 5 6 7 8
+
+Please enter a char:    c
+此单向链表中的数据为：
+9 8 0 6 5 4 3 2
+Please enter a char:    q
+wrong!
+
+--------------------------------
+Process exited after 151.1 seconds with return value 0
+请按任意键继续. . .

@@ -1,0 +1,62 @@
+Please enter a char:    a
+请确定输入数据的个数：  8
+请输入数据，以空格隔开：
+9 8 7 6 5 4 3 2
+
+Please enter a char:    b
+This is not an empty list.
+
+Please enter a char:    c
+The length of the list is :  8
+
+Please enter a char:    d
+请输入插入元素的位置：  6
+请输入插入元素的值：  0
+9 8 7 6 5 0 4 3 2
+
+Please enter a char:    e
+请输入删除元素的位置：  6
+删除该位置的元素值为:  0
+删除后线性表为:
+9 8 7 6 5 4 3 2
+
+
+Please enter a char:    f
+你要查找第几个元素:   3
+第  3  个元素的值为：  7
+
+Please enter a char:    g
+输入你想知道是否在表中的数值：  0
+此线性表中没有值为0的元素
+
+Please enter a char:    h
+线性表中各元素的值为：
+9 8 7 6 5 4 3 2
+
+Please enter a char:    j
+9 8 7 6 5 4 3 2
+
+Please enter a char:    k
+请输入在值为哪个元素前插入：  6
+请输入插入元素的值：  0
+9 8 7 0 6 5 4 3 2
+
+
+Please enter a char:    l
+请输入删除元素的值：  3
+删除后线性表为:
+9 8 7 0 6 5 4 2
+
+
+Please enter a char:    i
+线性表已被清空。
+
+Please enter a char:    c
+The length of the list is :  0
+
+Please enter a char:    q
+wrong!
+
+--------------------------------
+Process exited after 168.5 seconds with return value 0
+请按任意键继续. . .

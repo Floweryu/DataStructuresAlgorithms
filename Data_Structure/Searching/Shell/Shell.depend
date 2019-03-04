@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1545307689 source:d:\data_structures_algorithms\data_structure\searching\shell\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<algorithm>
+

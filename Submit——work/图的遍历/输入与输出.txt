@@ -1,0 +1,22 @@
+请输入无向图G的顶点数，边数：  8 14
+请输入8个顶点的值:
+abcdefgh
+请输入14条边的顶点1，顶点2：
+a b
+a c
+a e
+a f
+a g
+a h
+b d
+b e
+b h
+c g
+c h
+d h
+e f
+f g
+深度优先遍历：   a b d h c g f e
+广度优先遍历：   a b c e f g h d
+Process returned 0 (0x0)   execution time : 27.514 s
+Press any key to continue.

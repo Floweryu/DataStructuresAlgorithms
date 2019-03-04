@@ -1,0 +1,40 @@
+************************************************
+*****    前序、中序重建,           'a'   *******
+*****    中序、后序重建，          'b'   *******
+*****    前序遍历                  'c'   *******
+*****    中序遍历                  'd'   *******
+*****    后序遍历                  'e'   *******
+************************************************
+Please enter a char:      a
+请输入字符串长度：6
+请输入前序遍历字符串:abdcef
+请输入中序遍历字符串:dbaecf
+Please enter a char:      c
+前序遍历结果：    a b d c e f
+Please enter a char:      d
+中序遍历结果：    d b a e c f
+Please enter a char:      e
+后序遍历结果：    d b e f c a
+Please enter a char:      b
+请输入字符串长度：6
+请输入后遍历字符串:dbefca
+请输入中序遍历字符串:dbaecf
+Please enter a char:      c
+前序遍历结果：    a b d c e f
+Please enter a char:      d
+中序遍历结果：    d b a e c f
+Please enter a char:      e
+后序遍历结果：    d b e f c a
+Please enter a char:      a
+请输入字符串长度：11
+请输入前序遍历字符串:ABDHKECFIGJ
+请输入中序遍历字符串:HKDBEAIFCGJ
+Please enter a char:      c
+前序遍历结果：    A B D H K E C F I G J
+Please enter a char:      d
+中序遍历结果：    H K D B E A I F C G J
+Please enter a char:      q
+Wrong!!!
+
+Process returned 0 (0x0)   execution time : 126.272 s
+Press any key to continue.

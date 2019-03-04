@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1545222312 source:d:\data_structures_algorithms\data_structure\searching\hash\main.cpp
+	<iostream>
+
+1545224390 source:d:\data_structures_algorithms\data_structure\searching\hash\hash.cpp
+	<iostream>
+	<cstdlib>
+

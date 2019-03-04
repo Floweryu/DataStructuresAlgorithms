@@ -1,0 +1,16 @@
+4
+0 1 0 0
+0 0 1 0
+0 0 0 0
+0 0 1 0
+拓扑序列为：   3 0 1 2
+
+4
+0 1 0 0
+0 0 1 0
+0 1 0 0
+0 0 1 0
+这是一个有环图！！
+
+Process returned 0 (0x0)   execution time : 10.232 s
+Press any key to continue.

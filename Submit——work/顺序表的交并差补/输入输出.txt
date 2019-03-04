@@ -1,0 +1,63 @@
+********此程序的功能是执行集合的交并差补，请按提示进行操作********
+********        对La，Lb进行赋值，Please enter 'a'        ********
+********    对La，Lb进行排序并集操作，Please enter 'b'    ********
+********    对La，Lb进行数学并集操作，Please enter 'c'    ********
+********    对La，Lb进行交集操作，Please enter 'd'        ********
+********    对La，Lb进行差集操作，Please enter 'e'        ********
+********    对La，Lb进行补集操作，Please enter 'f'        ********
+
+Please enter a char :    a
+La线性表赋值成功!!!
+La线性表赋值成功!!!
+请为La表赋值.
+请确定输入数据的个数：  5
+请输入数据，以空格隔开：
+1 2 3 4 5
+请为Lb表赋值.
+请确定输入数据的个数：  5
+请输入数据，以空格隔开：
+4 5 6 7 8
+
+Please enter a char :    b
+集合La与集合Lb的排序并集为：
+1 2 3 4 4 5 5 6 7 8
+
+Please enter a char :    c
+集合La与集合Lb的数学并集为：
+1 2 3 4 5 6 7 8
+
+Please enter a char :    d
+集合La与集合Lb的交集为：
+4 5 6 7 8	//这里已经发生了错误，我在readme中已说明，想要连续执行可以把数学并集放在最后
+
+Please enter a char :    a
+La线性表赋值成功!!!
+La线性表赋值成功!!!
+请为La表赋值.
+请确定输入数据的个数：  5
+请输入数据，以空格隔开：
+1 2 3 4 5
+请为Lb表赋值.
+请确定输入数据的个数：  5
+请输入数据，以空格隔开：
+4 5 6 7 8
+
+Please enter a char :    d
+集合La与集合Lb的交集为：
+4 5
+
+Please enter a char :    e
+集合La与集合Lb的差集为：
+1 2 3 6 7 8
+
+Please enter a char :    f
+Lb在La中的补集为：
+1 2 3
+
+Please enter a char :    q
+wrong!
+
+--------------------------------
+Process exited after 52.3 seconds with return value 0
+请按任意键继续. . .
+

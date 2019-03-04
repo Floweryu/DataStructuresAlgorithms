@@ -1,0 +1,26 @@
+*************************************************
+*****Direct_InsertSort        enter   'a'  ******
+*****Binary_InsertSort        enter   'b'  ******
+*****Shell_InsertSort         enter   'c'  ******
+*************************************************
+输入数组长:    10
+输入的数组为:
+1 37 95 11 15 83 76 32 47 0
+
+Please enter a char :        a
+排序后的数组为:
+0 1 11 15 32 37 47 76 83 95
+
+Please enter a char :        b
+排序后的数组为:
+0 1 11 15 32 37 47 76 83 95
+
+Please enter a char :        c
+排序后的数组为:
+0 1 11 15 32 37 47 76 83 95
+
+Please enter a char :        q
+Wrong!!!
+
+Process returned 0 (0x0)   execution time : 14.222 s
+Press any key to continue.

@@ -1,0 +1,28 @@
+请输入权值的个数(>1) ：    8
+请依次输入 8 个权值（整形）:
+5 29 7 8 14 23 3 11
+0001
+10
+1110
+1111
+110
+01
+0000
+001
+
+Process returned 0 (0x0)   execution time : 30.098 s
+Press any key to continue.
+请输入权值的个数(>1) ：    8
+请依次输入 8 个权值（整形）:
+5 29 7 8 14 23 3 11
+0110
+10
+1110
+1111
+110
+00
+0111
+010
+
+Process returned 0 (0x0)   execution time : 12.241 s
+Press any key to continue.

@@ -1,0 +1,74 @@
+******************请按提示进行操作************************
+***** 初始化链队列,                     enter    'a' *****
+***** 向队列里输入数据，                enter    'b' *****
+***** 判断链队列是否为空，              enter    'c' *****
+***** 清空链队列，                      enter    'd' *****
+***** 销毁链队列 ，                     enter    'e' *****
+***** 返回链队列元素的个数，            enter    'f' *****
+***** 返回队头元素,并不删除，           enter    'g' *****
+***** 在队尾插入元素，                  enter    'h' *****
+***** 删除队头元素，并用返回其值，      enter    'i' *****
+***** 输出链队列里的全部元素，          enter    'j' *****
+**********************************************************
+
+Please enter a char:    a
+已为您初始化完成一个空链队列。
+
+Please enter a char:    b
+请输入数据的个数：  8
+9 8 7 6 5 4 3 2
+
+Please enter a char:    c
+This is not an empty stack.
+
+Please enter a char:    f
+链队列的长度是 :     8
+
+Please enter a char:    g
+队头元素为 :   9
+
+Please enter a char:    h
+请输入要插入元素的值：    0
+插入后栈内元素值变为：  9 8 7 6 5 4 3 2 0
+
+
+Please enter a char:    h
+请输入要插入元素的值：    1
+插入后栈内元素值变为：  9 8 7 6 5 4 3 2 0 1
+
+
+Please enter a char:    h
+请输入要插入元素的值：    2
+插入后栈内元素值变为：  9 8 7 6 5 4 3 2 0 1 2
+
+
+Please enter a char:    h
+请输入要插入元素的值：    3
+插入后栈内元素值变为：  9 8 7 6 5 4 3 2 0 1 2 3
+
+
+Please enter a char:    i
+删除的栈顶元素是：   9
+
+Please enter a char:    i
+删除的栈顶元素是：   8
+
+Please enter a char:    i
+删除的栈顶元素是：   7
+
+Please enter a char:    j
+6 5 4 3 2 0 1 2 3
+
+Please enter a char:    c
+This is not an empty stack.
+
+Please enter a char:    d
+链队列已被清空！！！
+
+Please enter a char:    c
+This is an empty stack.
+
+Please enter a char:    e
+链队列已被销毁！！！
+
+Please enter a char:    c

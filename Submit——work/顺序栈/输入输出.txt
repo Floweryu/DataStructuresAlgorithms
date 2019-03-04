@@ -1,0 +1,91 @@
+****** 构建一个空栈，enter               'a'    ******
+****** 销毁栈，enter                     'b'    ******
+****** 返回栈的长度，enter               'c'    ******
+****** 判断栈是否为空，enter             'd'    ******
+****** 返回栈顶元素，enter               'e'    ******
+****** 在栈顶插入一个元素，enter         'f'    ******
+****** 删除栈顶元素，enter               'g'    ******
+****** 向栈里输入数据，enter             'h'    ******
+****** 输出栈里的数据，enter             'i'    ******
+****** 清空栈，enter                     'j'    ******
+
+Please enter a char:    a
+以为您构建好一个空栈
+
+Please enter a char:    h
+请输入数据的个数：  8
+8 7 6 5 4 3 2 1
+
+Please enter a char:    c
+栈的长度为：   8
+
+Please enter a char:    d
+这不是一个空栈。
+
+Please enter a char:    e
+栈顶元素是：   1
+
+Please enter a char:    e
+栈顶元素是：   1
+
+Please enter a char:    f
+请输入将要在栈顶插入的元素：   0
+插入成功
+
+Please enter a char:    g
+删除成功，删除元素为:    0
+
+Please enter a char:    g
+删除成功，删除元素为:    1
+
+Please enter a char:    g
+删除成功，删除元素为:    2
+
+Please enter a char:    g
+删除成功，删除元素为:    3
+
+Please enter a char:    j
+
+Please enter a char:    d
+这是一个空栈。
+
+Please enter a char:    q
+wrong!
+
+--------------------------------
+Process exited after 56.47 seconds with return value 0
+请按任意键继续. . .
+
+
+有bug的输出
+
+****** 构建一个空栈，enter               'a'    ******
+****** 销毁栈，enter                     'b'    ******
+****** 返回栈的长度，enter               'c'    ******
+****** 判断栈是否为空，enter             'd'    ******
+****** 返回栈顶元素，enter               'e'    ******
+****** 在栈顶插入一个元素，enter         'f'    ******
+****** 删除栈顶元素，enter               'g'    ******
+****** 向栈里输入数据，enter             'h'    ******
+****** 输出栈里的数据，enter             'i'    ******
+****** 清空栈，enter                     'j'    ******
+
+Please enter a char:    a
+以为您构建好一个空栈
+
+Please enter a char:    h
+请输入数据的个数：  8
+8 7 6 5 4 3 2 1
+
+Please enter a char:    g
+删除成功，删除元素为:    1
+
+Please enter a char:    g
+删除成功，删除元素为:    2
+
+Please enter a char:    i
+3 4 5 6 7 8
+Please enter a char:    e
+这是一个空栈
+
+Please enter a char:

@@ -1,0 +1,58 @@
+******************请按提示进行操作**********************
+***** 初始化链栈,                     enter    'a' *****
+***** 向栈里输入数据，                enter    'b' *****
+***** 判断链栈是否为空，              enter    'c' *****
+***** 清空链栈，                      enter    'd' *****
+***** 销毁链栈 ，                     enter    'e' *****
+***** 返回链栈元素的个数，            enter    'f' *****
+***** 返回栈顶元素,并不删除，         enter    'g' *****
+***** 在栈顶插入元素，                enter    'h' *****
+***** 删除栈顶元素，并用 e 返回其值， enter    'i' *****
+***** 输出链栈里的全部元素，          enter    'j' *****
+********************************************************
+
+Please enter a char:    a
+已为您初始化完成一个空链栈。
+
+Please enter a char:    b
+请输入数据的个数：  5
+5 4 3 2 1
+
+Please enter a char:    c
+This is not an empty stack.
+
+Please enter a char:    d
+链栈已被清空！！！
+
+Please enter a char:    b
+请输入数据的个数：  8
+8 7 6 5 4 3 2 1
+
+Please enter a char:    f
+链栈的长度是 :     8
+
+Please enter a char:    g
+栈顶元素为 :   1
+
+Please enter a char:    h
+请输入要插入元素的值：    0
+插入后栈内元素值变为：  0 1 2 3 4 5 6 7 8
+
+Please enter a char:    i
+删除的栈顶元素是：   0
+
+Please enter a char:    i
+删除的栈顶元素是：   1
+
+Please enter a char:    i
+删除的栈顶元素是：   2
+
+Please enter a char:    j
+3 4 5 6 7 8
+
+Please enter a char:    q
+wrong!
+
+--------------------------------
+Process exited after 47.78 seconds with return value 0
+请按任意键继续. .

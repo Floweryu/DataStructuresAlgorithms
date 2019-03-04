@@ -1,0 +1,18 @@
+***********************************
+****非递归，please enter 'a'  *****
+****递归，  please enter 'b'  *****
+****退出，  please enter 'q'  *****
+Please enter a char:      a
+50
+12586269025
+The running time is:   0
+Please enter a char:      b
+50
+12586269025
+The running time is:   50.019
+Please enter a char:      q
+wrong!!!
+
+--------------------------------
+Process exited after 68.1 seconds with return value 0
+请按任意键继续. . .
