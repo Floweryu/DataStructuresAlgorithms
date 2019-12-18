@@ -58,7 +58,7 @@ void ShortestPath_DIJ(MGraph G, int v0, PathMatrix &P, ShortPathTable &D)   //v0
     {
         min = MAXCOST;                      //初始化
 
-        //求v0到各顶点中路径最短的一个顶点，赋值给v
+        //求v0到各顶点中路径最短的一个顶点，赋值给v. 选取中间点并标记
         for (w = 0; w < G.vexnum; w++)
         {
             if (! final[w] && D[w] < min)   //w顶点还没被访问，且w顶点离v0顶点更近
@@ -121,7 +121,7 @@ int main()
     ShortPathTable d;
     CreateUDG(G);
     ShortestPath_DIJ(G, start, p, d);
-    int i;
+    int i, j;
     cout<<"从起始点到终点的最短路径为："<<endl;
     for (i = 0; i < G.vexnum; i++)
     {
@@ -132,4 +132,5 @@ int main()
         if (d[i] != 0)
             cout<<d[i]<<" ";
     }
+
 }
