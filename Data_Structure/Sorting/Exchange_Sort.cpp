@@ -57,7 +57,7 @@ int partition(SqList &L, int low, int high)
             low++;
         swap(L.list[low], L.list[high]);
     }
-    return low;
+    return low;     // 返回枢轴的位置
 }
 
 //快速排序

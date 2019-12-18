@@ -45,7 +45,7 @@ int LocateVex(MGraph &G, int v)
 }
 
 
-//求最小正直并返回序号
+//求最小正值并返回序号
 int minimum(Edge closedge[], MGraph G)
 {
     int j, k, min = MAXCOST;
@@ -75,15 +75,15 @@ void MiniSpanTree_PRIM(MGraph &G, int u)
     {
         if (j != k)
         {
-            closedge[j].adjvex = u;
-            closedge[j].lowcost = G.arcs[k][j];
+            closedge[j].adjvex = u;         //赋值中间点的顶点值
+            closedge[j].lowcost = G.arcs[k][j];     //从 k 点到其余各点的权值
         }
     }
     closedge[k].lowcost = 0;                //表示该顶点已被选取
 
     for (i = 1; i < G.vexnum; i++)
     {
-        k = minimum(closedge, G);           //寻找最小代价
+        k = minimum(closedge, G);           //从lowcost中寻找最小代价顶点，返回序号值
 
         cout<<G.vexs[closedge[k].adjvex]<<"->"<<G.vexs[k]<<endl;
         closedge[k].lowcost = 0;             //第 k 个顶点并入U集

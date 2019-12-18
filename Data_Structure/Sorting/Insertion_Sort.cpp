@@ -1,17 +1,15 @@
 /**
 * Author : ZhangJunFeng
 * Date : 2018-12-18-20.59.01
-* Function: æ’å…¥æ’åºçš„è‹¥å¹²ç®—æ³•â€”â€”â€”â€”ç›´æ¥æ’å…¥ï¼ŒæŠ˜åŠæ’å…¥ï¼Œå¸Œå°”æ’å…¥
-* Algorithm description :   1ï¼Œç¨‹åºè¾“å…¥æ•°æ®ç”¨äº†éšæœºæ•°ç»„ï¼Œåªéœ€è¦è¾“å…¥æ•°ç»„ä¸­æ•°æ®çš„ä¸ªæ•°å³å¯ã€‚
-                            2ï¼Œæ•°ç»„ä¸‹æ ‡ä¸º 0 çš„åœ°å€ç”¨æ¥ä¸´æ—¶å­˜å‚¨å½“å‰å¾…æ’å…¥å€¼
-                            3ï¼Œå¸Œå°”æ’åºï¼šæ¯æ¬¡æ’åºä»¥ä¸€ç¡®å®šé—´éš”æ¯”è¾ƒä¸¤ä¸ªæ•°å€¼ï¼Œç›´åˆ°è¯¥é—´éš”ä¸º 1 ã€‚é—´éš”ä¸ªæ•°å°±æ˜¯æ’åºæ¬¡æ•°ã€‚
+* Function: ²åÈëÅÅĞòµÄÈô¸ÉËã·¨
+* Algorithm description :   1£¬³ÌĞòÊäÈëÊı¾İÓÃÁËËæ»úÊı×é£¬Ö»ĞèÒªÊäÈëÊı×éÖĞÊı¾İµÄ¸öÊı¼´¿É¡£
+                            2£¬Êı×éÏÂ±êÎª 0 µÄµØÖ·ÓÃÀ´ÁÙÊ±´æ´¢µ±Ç°´ı²åÈëÖµ
 */
 
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
 #include <algorithm>
-#include <cstdio>
 using namespace std;
 
 #define MAX_NUM 100
@@ -19,143 +17,162 @@ using namespace std;
 
 typedef int ElemType;
 
-struct SqList {
-	ElemType list[MAX_NUM];
-	int length;
+struct SqList
+{
+    ElemType list[MAX_NUM];
+    int length;
 };
 
-//ç›´æ¥æ’å…¥æ’åºâ€”â€”â€”â€”ä»å°åˆ°å¤§
-void Direct_InsertSort(SqList &L) {
-	int i, j;
-	for (i = 2; i <= L.length; i++) {                    //ä»ç¬¬äºŒä¸ªä½ç½®å¼€å§‹å¯»æ‰¾
-		if (L.list[i] < L.list[i-1]) {
-			L.list[0] = L.list[i];                       //å°†è¯¥å€¼å­˜å‚¨
-			L.list[i] = L.list[i-1];                     //æŠŠå‰ä¸€ä¸ªå€¼å‘åç§»åŠ¨ä¸€ä½
-			for (j = i - 2; L.list[j] > L.list[0]; --j) { //ä»å¾…æ’å…¥å€¼çš„å‰ä¸¤ä¸ªå€¼èµ·(å› ä¸ºå‰ä¸€ä¸ªå€¼å·²ç»ç§»åŠ¨)ï¼ŒæŠŠæ¯” L.list[i] å¤§çš„å€¼å‘åç§»åŠ¨ä¸€ä½
-				L.list[j+1] = L.list[j];
-			}  //è·³å‡ºå¾ªç¯æ—¶ j å·²ç»æŒ‡åˆ°å°äºæˆ–ç­‰äºL.list[0]çš„ä½ç½®
-			L.list[j+1] = L.list[0];
-		}
-	}
+//Ö±½Ó²åÈëÅÅĞò¡ª¡ª¡ª¡ª´ÓĞ¡µ½´ó
+void Direct_InsertSort(SqList &L)
+{
+    int i, j;
+    for (i = 2; i <= L.length; i++)                      //´ÓµÚ¶ş¸öÎ»ÖÃ¿ªÊ¼Ñ°ÕÒ
+    {
+        if (L.list[i] < L.list[i-1])
+        {
+            L.list[0] = L.list[i];                       //½«¸ÃÖµ´æ´¢
+            L.list[i] = L.list[i-1];                     //°ÑÇ°Ò»¸öÖµÏòºóÒÆ¶¯Ò»Î»
+            for (j = i - 2; L.list[j] > L.list[0]; --j)  //´Ó´ı²åÈëÖµµÄÇ°Á½¸öÖµÆğ£¬°Ñ±È L.list[i] ´óµÄÖµÏòºóÒÆ¶¯Ò»Î»
+            {
+                L.list[j+1] = L.list[j];
+            }  //Ìø³öÑ­»·Ê± j ÒÑ¾­Ö¸µ½Ğ¡ÓÚ»òµÈÓÚL.list[0]µÄÎ»ÖÃ
+            L.list[j+1] = L.list[0];
+        }
+    }
 }
 
-//æŠ˜åŠæ’å…¥æ’åº
-void Binary_InsertSort(SqList &L) {
-	int low, high, half;
-	int i, j;
-	for (i = 2; i <= L.length; i++) {
-		L.list[0] = L.list[i];
-		low = 1;
-		high = i-1;
-		while(high >= low) {
-			half = (high + low) / 2;
-			if (L.list[0] < L.list[half])
-				high = half - 1;
-			else
-				low = half + 1;
-		}   //è·³å‡ºå¾ªç¯æ—¶ high å·²ç»æŒ‡åˆ°å°äºæˆ–ç­‰äºL.list[0]çš„ä½ç½®
-		for (j = i - 1; j > high; j--)      //å‘åç§»åŠ¨
-			L.list[j+1] = L.list[j];
-		L.list[high+1] = L.list[0];
-	}
+//ÕÛ°ë²åÈëÅÅĞò
+void Binary_InsertSort(SqList &L)
+{
+    int low, high, half;
+    int i, j;
+    for (i = 2; i <= L.length; i++)
+    {
+        L.list[0] = L.list[i];
+        low = 1; high = i-1;
+        while(high >= low)
+        {
+            half = (high + low) / 2;
+            if (L.list[0] < L.list[half])
+                high = half - 1;
+            else
+                low = half + 1;
+        }   //Ìø³öÑ­»·Ê± high ÒÑ¾­Ö¸µ½Ğ¡ÓÚ»òµÈÓÚL.list[0]µÄÎ»ÖÃ
+        for (j = i - 1; j > high; j--)
+            L.list[j+1] = L.list[j];
+        L.list[high+1] = L.list[0];
+    }
 }
 
-//è·å¾—å¸Œå°”æ’åºçš„æ•°ç»„â€”â€”â€”â€”æŠ˜åŠ
-void Shell_Array(SqList &L, int dlta[], int len, int &k) {
-	while(len >=2) {
-		dlta[k] = len / 2;
-		k++;
-		len /= 2;
-	}
+void Shell_Array(SqList &L, int dlta[], int len, int &k)
+{
+    while(len >=2)
+    {
+        dlta[k] = len / 2;
+        k++;
+        len /= 2;
+    }
 }
 
-//å¸Œå°”æ’å…¥
-void Shell_Insert(SqList &L, int dk) {
-	int i, j;
+//Ï£¶û²åÈë
+void Shell_Insert(SqList &L, int dk)
+{
+    int i, j;
 
-	for (i = dk + 1; i <= L.length; i++) {      //ä»¥ç¡®å®šé—´éš”æ¯”è¾ƒä¸¤æ•°å€¼ï¼Œäº¤æ¢ä½ç½®
-		if (L.list[i] < L.list[i-dk])
-			swap(L.list[i], L.list[i-dk]);
-	}
+    for (i = dk + 1; i <= L.length; i++)
+    {
+        if (L.list[i] < L.list[i-dk])
+            swap(L.list[i], L.list[i-dk]);
+    }
 }
 
-//å¸Œå°”æ’åº
-void Shell_InsertSort(SqList &L, int dlta[], int t) {
-	int k;
-	for (k = 0; k < t; k++)                     //æ›´æ–°é—´éš”é•¿åº¦
-		Shell_Insert(L, dlta[k]);
-}
-
-
-//éšæœºäº§ç”Ÿæ•°ç»„
-void CreateList(SqList &L) {
-	int i;
-	srand(time(0));
-	for (i = 1; i <= L.length; i++) {
-		L.list[i] = rand() % NUM_MODLE;
-	}
-}
-
-void PrintfList(SqList &L) {
-	int i;
-	for (i = 1; i <= L.length; i++)
-		cout<<L.list[i]<<" ";
-	cout<<endl;
+//Ï£¶ûÅÅĞò
+void Shell_InsertSort(SqList &L, int dlta[], int t)
+{
+    int k;
+    for (k = 0; k < t; k++)
+        Shell_Insert(L, dlta[k]);
 }
 
 
-int main() {
-	cout<<"*************************************************"<<endl;
-	cout<<"*****Direct_InsertSort        enter   'a'  ******"<<endl;
-	cout<<"*****Binary_InsertSort        enter   'b'  ******"<<endl;
-	cout<<"*****Shell_InsertSort         enter   'c'  ******"<<endl;
-	cout<<"*************************************************"<<endl;
-	SqList Li;
-	int lilong;
-	char str;
+//Ëæ»ú²úÉúÊı×é
+void CreateList(SqList &L)
+{
+    int i;
+    srand(time(0));
+    for (i = 1; i <= L.length; i++)
+    {
+        L.list[i] = rand() % NUM_MODLE;
+    }
+}
 
-	cout<<"è¾“å…¥æ•°ç»„é•¿å€¼:    ";
-	cin>>lilong;
-	Li.length = lilong;
+void PrintfList(SqList &L)
+{
+    int i;
+    for (i = 1; i <= L.length; i++)
+        cout<<L.list[i]<<" ";
+    cout<<endl;
+}
 
-	CreateList(Li);
-	cout<<"è¾“å…¥çš„æ•°ç»„ä¸º:"<<endl;
-	PrintfList(Li);
 
-	do {
-		cout<<endl;
-		cout<<"Please enter a char :        ";
-		cin>>str;
-		switch(str) {
-			case 'a': {
-				Direct_InsertSort(Li);
-				cout<<"æ’åºåçš„æ•°ç»„ä¸º:"<<endl;
-				PrintfList(Li);
-				break;
-			}
-			case 'b': {
-				Binary_InsertSort(Li);
-				cout<<"æ’åºåçš„æ•°ç»„ä¸º:"<<endl;
-				PrintfList(Li);
-				break;
-			}
-			case 'c': {
-				int increase[lilong], leng;
+int main()
+{
+    cout<<"*************************************************"<<endl;
+    cout<<"*****Direct_InsertSort        enter   'a'  ******"<<endl;
+    cout<<"*****Binary_InsertSort        enter   'b'  ******"<<endl;
+    cout<<"*****Shell_InsertSort         enter   'c'  ******"<<endl;
+    cout<<"*************************************************"<<endl;
+    SqList Li;
+    int lilong;
+    char str;
 
-				Shell_Array(Li, increase, lilong, leng);
+    cout<<"ÊäÈëÊı×é³¤:    ";
+    cin>>lilong;
+    Li.length = lilong;
 
-				Shell_InsertSort(Li, increase, leng);
+    CreateList(Li);
+    cout<<"ÊäÈëµÄÊı×éÎª:"<<endl;
+    PrintfList(Li);
 
-				cout<<"æ’åºåçš„æ•°ç»„ä¸º:"<<endl;
-				PrintfList(Li);
-				break;
-			}
-			default:
-				cout<<"Wrong!!!"<<endl;
-		}
-	} while (str != 'q');
+    do
+    {
+        cout<<endl;
+        cout<<"Please enter a char :        ";
+        cin>>str;
+        switch(str)
+        {
+            case 'a':
+                {
+                    Direct_InsertSort(Li);
+                    cout<<"ÅÅĞòºóµÄÊı×éÎª:"<<endl;
+                    PrintfList(Li);
+                    break;
+                }
+            case 'b':
+                {
+                    Binary_InsertSort(Li);
+                    cout<<"ÅÅĞòºóµÄÊı×éÎª:"<<endl;
+                    PrintfList(Li);
+                    break;
+                }
+            case 'c':
+                {
+                    int increase[lilong], leng;
 
-	return 0;
+                    Shell_Array(Li, increase, lilong, leng);
+
+                    Shell_InsertSort(Li, increase, leng);
+
+                    cout<<"ÅÅĞòºóµÄÊı×éÎª:"<<endl;
+                    PrintfList(Li);
+                    break;
+                }
+            default: cout<<"Wrong!!!"<<endl;
+        }
+    }while (str != 'q');
+
+    return 0;
 }
 
 
